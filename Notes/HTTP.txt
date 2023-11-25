@@ -1,0 +1,16 @@
+﻿Структура НТТР запиту			| GET - метод запиту
+								| /home/index?x=10 - URL
+GET /home/index?x=10  HTTP/1.1	| /home/index - path
+Host: localhost					| ?x=10 - Query
+Connection: close				| Host, Connection - заголовки (headers)
+								| Ключ: значення\r\n
+								| HTTP/1.1 - протокол (scheme)
+Структура відповіді				| 
+								| 
+HTTP/1.1 200 OK					| 200 - response status code
+Connection: close				| OK - reason phrase (status message)
+Content-Type: text/html			| Заголовки
+Content-Length: 100500			| 
+								| порожний рядок (\r\n)
+<!doctype html>......			| Тіло (body) - до кінця пакету
+
